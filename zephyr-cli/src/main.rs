@@ -1,5 +1,3 @@
-use zephyr_common;
-
 fn main() {
     let num: i32 = 10;
     println!("Hello, world!");
