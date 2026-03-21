@@ -7,16 +7,16 @@ fn create_phone_number(numbers: &[u8]) -> String {
 
     for (i, num) in numbers.iter().enumerate() {
         if i == 0 {
-            buffer.push_str("(");
+            buffer.push('(');
         } else if i == 3 {
-            buffer.push_str(") ");
+            buffer.push(')');
         } else if i == 6 {
-            buffer.push_str("-");
+            buffer.push('-');
         }
         buffer.push(char::from_digit((*num).into(), 10).unwrap());
     }
 
-    return buffer;
+    buffer
 }
 
 pub fn run() {

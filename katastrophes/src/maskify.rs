@@ -6,10 +6,9 @@
 fn maskify(cc: &str) -> String {
     if cc.len() > 4 {
         let pos = cc.len() - 4;
-        let r = format!("{}{}", "#".repeat(pos), &cc[pos..]);
-        return r;
+        format!("{}{}", "#".repeat(pos), &cc[pos..])
     } else {
-        return cc.to_string();
+        cc.to_string()
     }
 }
 

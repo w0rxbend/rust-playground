@@ -34,7 +34,7 @@ mod tests {
         let t2 = [
             206847684, 1056521, 7, 17, 1901, 21104421, 7, 1, 35521, 1, 7781,
         ];
-        let t3 = [std::i32::MAX, 0, 1];
+        let t3 = [i32::MAX, 0, 1];
         assert_eq!(3, find_outlier(&t1));
         assert_eq!(206847684, find_outlier(&t2));
         assert_eq!(0, find_outlier(&t3));

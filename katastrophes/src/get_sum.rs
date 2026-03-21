@@ -3,9 +3,9 @@
 // Author: https://www.codewars.com/users/Vortus
 
 fn get_sum(a: i64, b: i64) -> i64 {
-    return (a.min(b)..=a.max(b)).sum();
+    (a.min(b)..=a.max(b)).sum()
 }
 
 pub fn run() {
-    println!("get_sum: {}", get_sum(1,1));
+    println!("get_sum: {}", get_sum(1, 1));
 }

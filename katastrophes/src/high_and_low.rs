@@ -2,12 +2,18 @@
 // Link: https://www.codewars.com/kata/554b4ac871d6813a03000035/train/rust
 // Author: https://www.codewars.com/users/Deantwo
 
-use std::fmt::format;
-
 fn high_and_low(numbers: &str) -> String {
-    let mut split: Vec<i32>= numbers.split_whitespace().map(|s| { s.parse::<i32>().unwrap()}).collect();
+    let mut split: Vec<i32> = numbers
+        .split_whitespace()
+        .map(|s| s.parse::<i32>().unwrap())
+        .collect();
     split.sort();
     format!("{} {}", split.last().unwrap(), split.first().unwrap())
+}
+
+pub fn run() {
+    let res = high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+    println!("high_and_low: {}", res);
 }
 
 #[test]
