@@ -11,6 +11,22 @@ name = "katastrophes"
 version = "0.1.0"
 
 [[package]]
+name = "tippletracker-api"
+version = "0.1.0"
+
+[[package]]
+name = "tippletracker-auth"
+version = "0.1.0"
+
+[[package]]
+name = "tippletracker-config"
+version = "0.1.0"
+
+[[package]]
+name = "tippletracker-db"
+version = "0.1.0"
+
+[[package]]
 name = "zephyr-cli"
 version = "0.1.0"
 dependencies = [

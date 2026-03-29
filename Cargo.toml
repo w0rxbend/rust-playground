@@ -1,3 +1,12 @@
 [workspace]
 resolver = "2"
-members = ["exercises", "katastrophes", "zephyr-cli", "zephyr-common"]
+members = [
+    "exercises", 
+    "katastrophes", 
+    "zephyr/zephyr-cli", 
+    "zephyr/zephyr-common",
+    "tippletracker/crates/tippletracker-api",
+    "tippletracker/crates/tippletracker-auth",
+    "tippletracker/crates/tippletracker-config",
+    "tippletracker/crates/tippletracker-db",
+]
