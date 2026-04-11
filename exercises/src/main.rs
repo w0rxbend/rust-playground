@@ -1,7 +1,4 @@
-use std::{
-    f32::consts::{LN_10, PI},
-    num::ParseIntError,
-};
+use std::{f32::consts::PI, num::ParseIntError};
 
 fn run1() {
     println!("Hello, world!");
@@ -76,8 +73,6 @@ fn run1() {
     let (x, y, z) = tup;
 
     println!("The values of x, y, z are: {}, {}, {}", x, y, z);
-
-
 }
 
 fn main() {
@@ -96,9 +91,7 @@ fn main() {
     let idx: usize = input.trim().parse().expect("Please enter a valid number");
     println!("The index is: {}", idx);
 
-    let element = array
-    .get(idx)
-    .unwrap_or(&0);
+    let element = array.get(idx).unwrap_or(&0);
 
     println!("The element at index {} is: {}", idx, element);
 }
